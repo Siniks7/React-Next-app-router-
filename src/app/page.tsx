@@ -1,11 +1,8 @@
-
+import React from 'react';
+import { Htag } from '../components';
 
 export default function Home() {
 	return (
-		<>
-			<div className=" font-medium text-[26px]">
-				Курсы по Photoshop
-			</div>
-		</>
+		<Htag tag='h1'>Курсы по Photoshop</Htag>
 	);
 }
