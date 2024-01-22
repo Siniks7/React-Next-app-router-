@@ -1,23 +1,18 @@
-.small {
-	color: var(--black);
+.p {
+	margin: 0;
+}
+
+.s {
 	font-size: 14px;
-	font-weight: 400;
 	line-height: 24px;
-	word-wrap: break-word
 }
 
-.medium {
-	font-weight: 400;
+.m {
 	font-size: 16px;
-	color: var(--black);
 	line-height: 24px;
-	word-wrap: break-word
 }
 
-.large {
+.l {
 	font-size: 18px;
-	color: var(--black);;
-	font-weight: 400;
 	line-height: 29px;
-	word-wrap: break-word
 }

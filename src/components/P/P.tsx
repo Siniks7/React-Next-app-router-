@@ -1,15 +1,18 @@
 import { PProps } from './P.props';
 import styles from './P.module.css';
+import cn from 'classnames';
 
-export const P = ({ size = 'medium', children }: PProps): JSX.Element => {
-	switch (size) {
-	case 'small':
-		return <p className={styles.small}>{children}</p>;
-	case 'medium':
-		return <p className={styles.medium}>{children}</p>;
-	case 'large':
-		return <p className={styles.large}>{children}</p>;
-	default:
-		return <></>;
-	}
+export const P = ({ size = 'm', children, className, ...props }: PProps): JSX.Element => {
+	return (
+		<p
+			className={cn(styles.p, className, {
+				[styles.s]: size == 's',
+				[styles.m]: size == 'm',
+				[styles.l]: size == 'l'
+			})}
+			{...props}
+		>
+			{children}
+		</p>
+	);
 };
