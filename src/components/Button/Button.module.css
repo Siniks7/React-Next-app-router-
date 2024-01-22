@@ -44,7 +44,7 @@
 	transition: all 0.2s;
 }
 
-.primary Image,
-.ghost:hover Image {
-	fill: var(--white);
+.primary img,
+.ghost:hover img {
+	filter:invert(100%)
 }
