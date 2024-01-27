@@ -9,8 +9,8 @@ export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
 		<footer className={cn(className, styles.footer)} {...props}>
 			<div className={styles.info}>OwlTop © 2020 - {format(new Date(), 'yyyy')} Все права защищены</div>
 			<div className={styles.links}>
-				<Link href="/">Пользовательское соглашение</Link>
-				<Link href="/">Политика конфиденциальности</Link>
+				<Link href="/" target='blank'>Пользовательское соглашение</Link>
+				<Link href="/" target='blank'>Политика конфиденциальности</Link>
 			</div>
 		</footer>
 	);

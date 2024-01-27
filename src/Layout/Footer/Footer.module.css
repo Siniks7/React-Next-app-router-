@@ -6,7 +6,11 @@
     justify-content: space-between;
     font-size: 16px;  
     font-weight: 500;
-    line-height: 16px;
+    line-height: 20px;
+}
+
+.footer a:hover {
+	color: var(--gray-light);
 }
 
 .links {
@@ -26,3 +30,4 @@
        gap: 5px; 
     }
 }
+
