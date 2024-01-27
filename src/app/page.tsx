@@ -7,7 +7,7 @@ import { MenuItem } from '../interfaces/menu.interface';
 
 function Home(): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
-	const [menuData, setMenuData] = useState<HomeProps[]>([]);
+	const [menuData, setMenuData] = useState<MenuItem[]>([]);
 
 	async function getData() {
 		const firstCategory = 0;
@@ -22,11 +22,7 @@ function Home(): JSX.Element {
 			return;
 		}
 	}
-	// const data = async () => await getData()
-	// 	.then(res => {
-	// 		return res.props.menu;	
-	// 	});
-		
+	
 	useEffect(() => {
 		getData();
 	}, []);
@@ -51,7 +47,3 @@ function Home(): JSX.Element {
 
 export default withLayout(Home);
 
-interface HomeProps {
-    menu: MenuItem[];
-    firstCategory: number;
-}
